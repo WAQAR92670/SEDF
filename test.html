@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+            color: #ffffff;
+        }
+
+        .form-section {
+            display: none;
+        }
+
+        .form-section.current {
+            display: block;
+        }
+
+        .btn-primary,
+        .btn-success {
+            margin-top: 20px;
+            width: 10%;
+        }
+
+        .card {
+            background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+            border: none;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        label {
+            color: #ffffff;
+        }
+        .title-heading{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Register SMA</h1>
+        <br>
+        <div class="card p-4">
+            <form id="sma-form">
+                <!-- Personal Information -->
+                <div class="form-section current">
+                    <div class="p-2 mb-3 bg-primary text-white text-center">
+                    <h4 class=" title-heading">Personal Information</h4>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="firstName">First Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName">Last Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter First Name" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="dob">Date of Birth <span class="text-danger">*</span></label>
+                            <input type="date" class="form-control" id="dob" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="phone">Phone</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter Phone">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="whatsapp">WhatsApp</label>
+                            <input type="tel" class="form-control" id="whatsapp" placeholder="Whatsapp No">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="gender">Gender</label>
+                            <select class="form-select" id="gender">
+                                <option value="">Select your gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="role">Are You a Patient or Caregiver? <span class="text-danger">*</span></label>
+                            <select class="form-select" id="role" required>
+                                <option value="">Select</option>
+                                <option value="patient">Patient</option>
+                                <option value="caregiver">Caregiver</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="address">Address <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="address" placeholder="Enter Address" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="city">City <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="city" placeholder="Enter City" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="province">Province/State <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="province" placeholder="Enter Province/State" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="country">Country <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="country" placeholder="Enter Country" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patient-Caregiver Information -->
+                <div class="form-section">
+                    <div class="p-2 mb-3 bg-primary text-white text-center">
+                        <h4 class=" title-heading">Patient-Caregiver Information</h4>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="firstName">First Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName">Last Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter First Name" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="dob">Date of Birth <span class="text-danger">*</span></label>
+                            <input type="date" class="form-control" id="dob" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter Phone">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="phone2">Phone Number 2</label>
+                            <input type="tel" class="form-control" id="phone2">
+                        </div>  
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="whatsapp">WhatsApp</label>
+                            <input type="tel" class="form-control" id="whatsapp" placeholder="Whatsapp No">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="gender">Gender</label>
+                            <select class="form-select" id="gender">
+                                <option value="">Select your gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <label for="address">Address <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="address" placeholder="Enter Address" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="city">City <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="city" placeholder="Enter City" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="province">Province/State <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="province" placeholder="Enter Province/State" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="country">Country <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="country" placeholder="Enter Country" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email Address">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="relationship">Relationship with Patient <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="relationship" placeholder="Specify Relationship with the patient" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        
+                    </div>
+                </div>
+
+                <!-- Medical Details -->
+                <div class="form-section">
+                    <div class="p-2 mb-3 bg-primary text-white text-center">
+                        <h4 class="title-heading">Medical Details</h4>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="smaType">SMA Type</label>
+                            <select class="form-select" id="smaType">
+                                <option value="">Select your SMA Type</option>
+                                <option value="Type 0">Type 0</option>
+                                <option value="Type 1">Type 1</option>
+                                <option value="Type 2">Type 2</option>
+                                <option value="Type 3">Type 3</option>
+                                <option value="Type 4">Type 4</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="smaHistory">Family History of SMA</label>
+                            <select class="form-select" id="smaHistory" onchange="toggleSmaHistoryFields()">
+                                <option value="">Select your SMA family history</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Relationship Field - initially hidden -->
+                    <div class="row mb-3" id="relationshipField" style="display: none;">
+                        <div class="col-md-12">
+                            <label for="relationship">Relationship with Patient <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="relationship" placeholder="Enter Relationship">
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="checkup">Did you get a checkup from a doctor?</label>
+                            <select class="form-select" id="checkup" onchange="toggleCheckupFields()">
+                                <option value="">Select</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Consultant Doctor Fields - initially hidden -->
+                    <div class="row mb-3" id="doctorFields" style="display: none;">
+                        <div class="col-md-6">
+                            <label for="consultantDoctor">Consultant Doctor</label>
+                            <input type="text" class="form-control" id="consultantDoctor" placeholder="Enter Consultant Doctor Name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="consultantDoctorFile">Consultant Doctor (file)</label>
+                            <input type="file" class="form-control" id="consultantDoctorFile">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="doctorPrescription">Upload Doctor Prescription (file)</label>
+                            <input type="file" class="form-control" id="doctorPrescription">
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <label for="medicalCondition">Current Medical Condition</label>
+                            <textarea class="form-control" id="medicalCondition" rows="4" placeholder="Enter Current Medical Condition Of Patient"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medical Details -->
+                <div class="form-section">
+                    <div class="p-2 mb-3 bg-primary text-white text-center">
+                        <h4 class="title-heading">Funding Request</h4>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <label for="fdaApprovedTreatment">Any FDA-approved treatment received previously?</label>
+                            <select class="form-select" id="fdaApprovedTreatment" onchange="toggleFdaTreatmentFields()">
+                                <option value="">Select</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- FDA Treatment Fields - initially hidden -->
+                    <div class="row mb-3" id="fdaTreatmentFields" style="display: none;">
+                        <div class="col-md-12">
+                            <label for="treatmentName">Treatment Name</label>
+                            <select class="form-select" id="treatmentName">
+                                <option value="">Select Treatment Name</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="medicalCondition">Your Contribution</label>
+                            <textarea class="form-control" id="medicalCondition" rows="4" placeholder="Enter Your Contribution"></textarea>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="medicalCondition">Financial Status and Additional Details</label>
+                            <textarea class="form-control" id="medicalCondition" rows="4" placeholder="Enter Financial Status and Detailst"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-primary" id="prevBtn" style="display: none;">Previous</button>
+                    <button type="button" class="btn btn-success" id="nextBtn">Next</button>
+                    <button type="submit" class="btn btn-success" id="submitBtn" style="display: none;">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+        const formSections = document.querySelectorAll('.form-section');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const submitBtn = document.getElementById('submitBtn');
+        let currentSection = 0;
+
+        function showSection(index) {
+            formSections.forEach((section, i) => {
+                section.classList.toggle('current', i === index);
+            });
+
+            prevBtn.style.display = index > 0 ? 'inline-block' : 'none';
+            nextBtn.style.display = index < formSections.length - 1 ? 'inline-block' : 'none';
+            submitBtn.style.display = index === formSections.length - 1 ? 'inline-block' : 'none';
+        }
+
+        function validateSection(section) {
+            const inputs = section.querySelectorAll('input[required], select[required]');
+            for (let input of inputs) {
+                if (!input.value) {
+                    input.classList.add('is-invalid');
+                    input.focus();
+                    return false;
+                } else {
+                    input.classList.remove('is-invalid');
+                }
+            }
+            return true;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (validateSection(formSections[currentSection])) {
+                currentSection++;
+                showSection(currentSection);
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentSection--;
+            showSection(currentSection);
+        });
+
+        // Form Submission Event Listener
+        document.getElementById('sma-form').addEventListener('submit', (e) => {
+            e.preventDefault();  // Prevent form from submitting the traditional way
+
+            // Display SweetAlert on successful form submission
+            Swal.fire({
+                icon: 'success',
+                title: 'Form Submitted!',
+                text: 'Your form has been submitted successfully.',
+                confirmButtonText: 'OK'
+            }).then(() => {
+                // Reset form or redirect user
+                document.getElementById('sma-form').reset();
+                currentSection = 0; // Reset the form to the first section
+                showSection(currentSection);
+            });
+        });
+
+        showSection(currentSection);
+
+        // Toggle fields based on dropdown selections
+        function toggleSmaHistoryFields() {
+            const smaHistory = document.getElementById('smaHistory').value;
+            const relationshipField = document.getElementById('relationshipField');
+            relationshipField.style.display = smaHistory === 'yes' ? 'block' : 'none';
+        }
+
+        function toggleCheckupFields() {
+            const checkup = document.getElementById('checkup').value;
+            const doctorFields = document.getElementById('doctorFields');
+            doctorFields.style.display = checkup === 'yes' ? 'block' : 'none';
+        }
+
+        function toggleFdaTreatmentFields() {
+            const fdaApprovedTreatment = document.getElementById('fdaApprovedTreatment').value;
+            const fdaTreatmentFields = document.getElementById('fdaTreatmentFields');
+            fdaTreatmentFields.style.display = fdaApprovedTreatment === 'yes' ? 'block' : 'none';
+        }
+</script>
+
+  <!-- SweetAlert2 Library -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>

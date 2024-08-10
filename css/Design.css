@@ -1,0 +1,283 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+.navbar {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover{
+    color: black !important;
+}
+
+/* Slider Section */
+.slider-section {
+    position: relative;
+    border-radius: 270px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.slider-section .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+/* Introductory Video and Overview Sections */
+.intro-overview {
+    display: flex;
+    justify-content: center;
+    margin-top: -250px; /* Adjust this value to control the overlap */
+    position: relative;
+    z-index: 2;
+}
+
+.intro-overview > div {
+    background: #f0f8ff;
+    padding:80px 20px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+    min-width: 250px;
+}
+
+.vision-statement {
+    margin: 40px 0;
+    font-size: 1.5rem;
+    color: #2a9d8f;
+    text-align: center;
+}
+.vision-statement span {
+    animation: marquee 15s linear infinite;
+    white-space: nowrap;
+    display: inline-block;
+}
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2a9d8f;
+}
+.section-content {
+    margin-bottom: 40px;
+}
+.card {
+    margin-bottom: 20px;
+    border: none;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.footer {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Genriosity/ SMA / Membership Form */
+/* General Styling */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #0056b3;
+}
+
+/* Layout Structure */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* Donation Appeal Section */
+.donation-appeal {
+    margin-bottom: 20px;
+}
+
+.donation-box {
+    background: #f0f8ff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+/* SMA Section */
+.sma-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.sma-box {
+    background: #f0f8ff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sma-box .video {
+    height: 30vh;
+    background: #add8e6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.sma-box .content {
+    height: 40%;
+    background: #e6e6fa;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+}
+
+/* Membership Form Section */
+.membership-form {
+    background: #f0f8ff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 25%;
+    min-height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.membership-form:hover {
+    cursor: pointer;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.membership-form::before {
+    content: "Membership Form";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: #0056b3;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .membership-form {
+        margin-top: 20px;
+    }
+}
+
+/* Volunteers Section */
+
+/* Layout Structure */
+.volunteers-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+/* Volunteer Section Boxes */
+.volunteer-box {
+    background: #add8e6;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+    position: relative;
+}
+
+.volunteer-box .content {
+    background: #e6e6fa;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.volunteer-box .picture {
+    background: #d3d3d3;
+    border-radius: 10px;
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Specific Styles for Volunteer Types */
+.volunteer-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Styling for boxes with the arrow bottom */
+.arrow-box {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.arrow-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #add8e6;
+}
